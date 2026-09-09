@@ -1,205 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family
-    =Montserrat:wght@400;600;700;800&family=Pacifico&family=Poppins:wght@300;
-    400;500;600;700&display=swap" rel="stylesheet">
-    
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - BiteBox</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;700;800&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-
 <body>
-  <!-- ====================== HEADER ====================== -->
-  <header>
-    <img src="assets/images/logo.png" alt="BiteBox Logo" class="logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="about.html">About</a>
-      <a href="contact.html" class="active">Contact</a>
-      <a href="cart.html" class="cart-icon">
-        <img src="assets/icons/cart.png" alt="Cart" width="22" height="22" />
-      </a>
-    </nav>
-  </header>
+    <!-- ====== HEADER ====== -->
+    <header id="header">
+        <img src="assets/images/logo.png" alt="BiteBox Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="cart.html" class="cart-icon">
+                <span class="cart-wrapper">
+                    <img src="assets/icons/cart.png" alt="Cart Icon" width="22" height="22">
+                    <span id="cart-count">0</span>
+                </span>
+            </a>
+            <button type="button" id="theme-toggle" class="theme-toggle">
+                <span class="theme-icon">☀</span>
+                <span class="theme-text">DAY MODE</span>
+            </button>
+        </nav>
+    </header>
 
-  <!-- ====================== CONTACT HERO ====================== -->
-  <section id="contact-hero">
-    <h2>Contact <span>Us</span></h2>
-    <h3>We'd Love to Hear From You</h3>
-    <hr />
-    <p>Have a question, feedback, or special request? Our team at BiteBox is always ready to assist you.</p>
-  </section>
-
-  <!-- ====================== SECTION 1: CONTACT INFORMATION CARDS ====================== -->
-  <section id="contact-info">
-    <div class="section-title">
-      <h4>Get in Touch</h4>
-      <h2>Contact Information</h2>
-    </div>
-    <div class="contact-container">
-
-      <!-- Card 1: Phone -->
-      <article>
-        <img src="assets/icons/phone-icon.png" alt="Phone" />
-        <h3>Phone</h3>
-        <p>+91 98765 43210</p>
-        <p>+91 98765 43211</p>
-        <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="assets/icons/instagram.png" alt="Instagram" /></a>
-        <a href="#"><img src="assets/icons/twitter.png" alt="Twitter" /></a>
-      </article>
-
-      <!-- Card 2: Email -->
-      <article>
-        <img src="assets/icons/email-icon.png" alt="Email" />
-        <h3>Email</h3>
-        <p>info@bitebox.com</p>
-        <p>support@bitebox.com</p>
-        <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="assets/icons/instagram.png" alt="Instagram" /></a>
-        <a href="#"><img src="assets/icons/twitter.png" alt="Twitter" /></a>
-      </article>
-
-      <!-- Card 3: Location -->
-      <article>
-        <img src="assets/icons/location-icon.png" alt="Location" />
-        <h3>Location</h3>
-        <p>123 Food Street,</p>
-        <p>Mumbai, Maharashtra 400001</p>
-        <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
-        <a href="#"><img src="assets/icons/instagram.png" alt="Instagram" /></a>
-        <a href="#"><img src="assets/icons/twitter.png" alt="Twitter" /></a>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ====================== SECTION 2: BUSINESS HOURS + FORM (SIDE-BY-SIDE) ====================== -->
-  <section id="contact-details">
-
-    <!-- LEFT COLUMN: Business Hours + Event Card -->
-    <div class="left-column">
-
-      <!-- Business Hours -->
-      <div class="business-card">
-        <h2>Business Hours</h2>
-        <hr />
-        <div class="business-content">
-          <img src="assets/icons/clock.png" alt="Clock" />
-          <table>
-            <tr><td>Monday – Friday</td><td>11:00 AM – 11:00 PM</td></tr>
-            <tr><td>Saturday</td><td>10:00 AM – 12:00 AM</td></tr>
-            <tr><td>Sunday</td><td>10:00 AM – 10:00 PM</td></tr>
-          </table>
+    <!-- ====== CONTACT HERO ====== -->
+    <section id="contact-hero">
+        <div class="hero-content">
+            <h2>Contact <span>Us</span></h2>
+            <h3>We'd Love to Hear From You</h3>
+            <hr>
+            <p>Have a question, feedback, or special request?<br>Our team at BiteBox is always ready to assist you.</p>
         </div>
-      </div>
+    </section>
 
-      <!-- Event Card (ONLY ONCE - keep this, delete the duplicate at the bottom!) -->
-      <div class="event-card">
-        <img src="assets/icons/calendar.png" alt="Calendar" />
-        <div>
-          <h3>Planning a special event?</h3>
-          <p>We also offer catering services for parties, events and corporate meetings.</p>
-          <a href="#">Contact Us</a>
+    <!-- ====== CONTACT INFORMATION CARDS ====== -->
+    <section id="contact-info">
+        <div class="section-title">
+            <h4>Get In Touch</h4>
+            <h2>We Are Here for You</h2>
         </div>
-      </div>
-
-    </div>
-
-    <!-- RIGHT COLUMN: Contact Form -->
-    <div class="right-column">
-      <h2>Send Us a Message</h2>
-      <hr />
-      <form>
-        <div class="form-row">
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
+        <div class="contact-container">
+            <article>
+                <img src="assets/icons/location-icon.png" alt="Location">
+                <h3>Address</h3>
+                <p>BiteBox Restaurant<br>123 Food Street,<br>Mumbai, Maharashtra<br>400001, India</p>
+            </article>
+            <article>
+                <img src="assets/icons/phone-icon.png" alt="Phone">
+                <h3>Phone</h3>
+                <p>+91 98765 43210<br>+91 91234 56789</p>
+            </article>
+            <article>
+                <img src="assets/icons/email-icon.png" alt="Email">
+                <h3>Email</h3>
+                <p>support@bitebox.com<br>info@bitebox.com</p>
+            </article>
+            <article>
+                <img src="assets/icons/support-icon.png" alt="Support">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/icons/contact-facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/icons/contact-instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/icons/contact-twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="assets/icons/contact-youtube.png" alt="YouTube"></a>
+                </div>
+            </article>
         </div>
-        <div class="form-row">
-          <input type="tel" placeholder="Phone Number" />
-          <input type="text" placeholder="Subject" />
+    </section>
+
+    <!-- ====== BUSINESS HOURS + FORM ====== -->
+    <section id="contact-details">
+        <div class="left-column">
+            <div class="business-card">
+                <h2>Business Hours</h2>
+                <hr>
+                <div class="business-content">
+                    <img src="assets/icons/clock.png" alt="Clock">
+                    <table>
+                        <tr><td>Monday – Friday</td><td>11:00 AM – 11:00 PM</td></tr>
+                        <tr><td>Saturday</td><td>10:00 AM – 12:00 AM</td></tr>
+                        <tr><td>Sunday</td><td>10:00 AM – 10:00 PM</td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="assets/icons/calendar.png" alt="Calendar">
+                <div>
+                    <h3>Planning a special event?</h3>
+                    <p>We also offer catering services for parties, events and corporate meetings.</p>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
         </div>
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send Message ✈</button>
-      </form>
-    </div>
 
-  </section>
-
-  <!-- ====================== SECTION 3: GOOGLE MAP ====================== -->
-  <section id="google-map">
-    <div class="section-title">
-      <h4>Find Us</h4>
-      <h2>Our Location</h2>
-      <p>Visit us at our restaurant or get in touch for delivery.</p>
-    </div>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8134178824187!2d72.824708!3d18.956401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9a6f0c7d8b1%3A0x6f0c7d8b1a9e3f4c!2sMumbai!5e0!3m2!1sen!2sin!4v1712345678901"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </section>
-
-  <!-- ====================== FOOTER ====================== -->
-  <footer>
-    <div class="footer-container">
-      <section>
-        <img src="assets/images/logo.png" alt="BiteBox Logo" />
-        <p>Delicious food delivered to your doorstep. Fresh, fast and tasty!</p>
-        <div class="footer-socials">
-          <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
-          <a href="#"><img src="assets/icons/instagram.png" alt="Instagram" /></a>
-          <a href="#"><img src="assets/icons/twitter.png" alt="Twitter" /></a>
-          <a href="#"><img src="assets/icons/youtube.png" alt="YouTube" /></a>
+        <div class="right-column">
+            <h2>Send Us a Message</h2>
+            <hr>
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" name="name">
+                    <input type="email" placeholder="Your Email" name="email">
+                </div>
+                <div class="form-row">
+                    <input type="tel" placeholder="Phone Number" name="phone">
+                    <input type="text" placeholder="Subject" name="subject">
+                </div>
+                <textarea placeholder="Your Message" name="message"></textarea>
+                <button class="contact-form-button" type="submit">Send Message ✈</button>
+            </form>
         </div>
-      </section>
-      <section>
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="cart.html">Cart</a></li>
-        </ul>
-      </section>
-      <section>
-        <h3>Customer Service</h3>
-        <ul>
-          <li>Track Order</li>
-          <li>FAQs</li>
-          <li>Shipping Policy</li>
-          <li>Return Policy</li>
-          <li>Terms &amp; Conditions</li>
-        </ul>
-      </section>
-      <section>
-        <h3>Contact Us</h3>
-        <p>📞 +91 98765 43210</p>
-        <p>✉ support@bitebox.com</p>
-        <p>📍 123 Food Street, Mumbai, Maharashtra 400001</p>
-      </section>
-      <section>
-        <h3>Payment Methods</h3>
-        <div class="payment-icons">
-          <img src="assets/images/visa.png" alt="Visa" />
-          <img src="assets/images/mastercard.png" alt="MasterCard" />
-          <img src="assets/images/upi.png" alt="UPI" />
-          <img src="assets/images/paytm.png" alt="Paytm" />
-        </div>
-      </section>
-    </div>
-    <p>© 2026 BiteBox. All Rights Reserved.</p>
-  </footer>
+    </section>
 
+    <!-- ====== GOOGLE MAP ====== -->
+    <section id="google-map">
+        <div class="section-title">
+            <h4>Find Us</h4>
+            <h2>Visit Our Restaurant</h2>
+            <p>Locate BiteBox on Google Maps and visit us for a delightful dining experience.</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.019786814624!2d72.9502261!3d19.194338099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b92e8437d15b%3A0x8b55216ca2b2ebe9!2sI.T.VEDANT!5e0!3m2!1sen!2sin!4v1785401144688!5m2!1sen!2sin" width="100%" height="450" style="border:0;" loading="lazy" allowfullscreen></iframe>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="footer-container">
+            <section>
+                <img src="assets/images/logo.png" alt="BiteBox Logo" width="180">
+                <p>Delicious food delivered to your doorstep. Fresh, fast and tasty!</p>
+                <div class="footer-socials">
+                    <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" width="35" height="35"></a>
+                    <a href="#"><img src="assets/icons/instagram.png" alt="Instagram" width="35" height="35"></a>
+                    <a href="#"><img src="assets/icons/twitter.png" alt="Twitter" width="35" height="35"></a>
+                    <a href="#"><img src="assets/icons/youtube.png" alt="YouTube" width="35" height="35"></a>
+                </div>
+            </section>
+            <section>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Customer Service</h3>
+                <ul>
+                    <li>Track Order</li>
+                    <li>FAQs</li>
+                    <li>Shipping Policy</li>
+                    <li>Return Policy</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Contact Us</h3>
+                <p>📞 +91 98765 43210</p>
+                <p>✉ support@bitebox.com</p>
+                <p>📍 123 Food Street, Mumbai, Maharashtra 400001</p>
+            </section>
+            <section>
+                <h3>Payment Methods</h3>
+                <div class="payment-icons">
+                    <img src="assets/images/visa.png" alt="Visa">
+                    <img src="assets/images/mastercard.png" alt="MasterCard">
+                    <img src="assets/images/upi.png" alt="UPI">
+                    <img src="assets/images/paytm.png" alt="Paytm">
+                </div>
+            </section>
+        </div>
+        <p>© 2026 BiteBox. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
